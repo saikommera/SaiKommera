@@ -1,38 +1,49 @@
-<!-- HEADER -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              ANIMATED HEADER BANNER                      -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=800&color=1F6FEB&center=true&vCenter=true&multiline=false&width=700&height=60&lines=Senior+DevOps+%2F+SRE+Engineer;Platform+%26+Cloud+Engineer;DevSecOps+%7C+AWS+%7C+Kubernetes;Building+%40+Scale+for+Fortune+500)](https://git.io/typing-svg)
+<img src="https://raw.githubusercontent.com/saikommera/SaiKommera/main/assets/header-banner.svg" width="100%" alt="Sai Babji Kommera — Senior DevOps / SRE Engineer"/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=1F6FEB&height=120&section=header&text=Sai%20Babji%20Kommera&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=65" width="100%"/>
+</div>
 
-<p>
-  <a href="mailto:saibabji1@gmail.com"><img src="https://img.shields.io/badge/Gmail-saibabji1%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/in/sai-babji-kommera-a3b953396/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/saikommera"><img src="https://img.shields.io/badge/GitHub-saikommera-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <img src="https://img.shields.io/badge/Open%20To%20Work-DFW%20%7C%20Remote-2ea44f?style=for-the-badge&logo=googlemaps&logoColor=white"/>
-</p>
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              TYPING ANIMATION + BADGES                  -->
+<!-- ═══════════════════════════════════════════════════════ -->
 
-<img src="https://komarev.com/ghpvc/?username=saikommera&label=Profile+Views&color=1F6FEB&style=flat-square"/>
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=600&color=58A6FF&center=true&vCenter=true&width=700&height=45&lines=kubectl+get+pods+--all-namespaces+%E2%9C%93;terraform+apply+-auto-approve+%E2%9C%93;helm+upgrade+--atomic+--wait+%E2%9C%93;argocd+app+sync+production+%E2%9C%93;aws+eks+update-kubeconfig+%E2%9C%93;Zero-drift+deployments+every+day+%F0%9F%9A%80)](https://git.io/typing-svg)
+
+<br/>
+
+<a href="mailto:saibabji1@gmail.com"><img src="https://img.shields.io/badge/Gmail-saibabji1%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://www.linkedin.com/in/sai-babji-kommera-a3b953396/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<img src="https://raw.githubusercontent.com/saikommera/SaiKommera/main/assets/open-to-work.svg" width="280" alt="Open to Work — Senior DevOps · SRE · Platform Engineer"/>
+<br/>
+<img src="https://komarev.com/ghpvc/?username=saikommera&label=Profile+Views&color=1f6feb&style=flat-square"/>
 
 </div>
 
 ---
 
-<!-- IMPACT METRICS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              ANIMATED METRICS DASHBOARD                  -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
 <div align="center">
 
-## ⚡ Impact at a Glance
-
-| 🚀 Release Velocity | 📈 Service Uptime | 💰 Cloud Cost Savings | 🔒 Security Audits |
-|:---:|:---:|:---:|:---:|
-| **40% faster** | **+25% uptime** | **22% AWS reduction** | **ISO 27001 · SOC 2** |
-| CI/CD + IDP automation | SLO/SLI + OpenTelemetry | FinOps · Right-sizing | Zero critical findings |
+<img src="https://raw.githubusercontent.com/saikommera/SaiKommera/main/assets/metrics.svg" width="100%" alt="Impact metrics — 40% faster releases · +25% uptime · 22% cost saved · ISO 27001 · SOC 2"/>
 
 </div>
 
 ---
 
-<!-- ABOUT -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              ABOUT — YAML CODE BLOCK                    -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
 ## 👨‍💻 About Me
 
 ```yaml
@@ -42,26 +53,68 @@ location: Dallas-Fort Worth, TX (Relocating) | Remote-friendly
 experience: 5+ years
 current_role: DevOps Developer @ Entra Solutions Inc.
 previous:
-  - DevOps / SRE @ Deloitte (Fortune 500 clients)
+  - DevOps / SRE @ Deloitte (Fortune 500 financial-services clients)
   - Software Engineer – DevOps/Platform @ DXC Technology
 education: M.S. Computer & Information Science — Univ. of Arkansas (STEM)
 work_authorization: STEM OPT through June 2028 | No sponsorship required
 focus_areas:
   - Internal Developer Platforms (IDP) + Golden Paths
-  - Kubernetes / EKS + GitOps (ArgoCD)
-  - Infrastructure as Code (Terraform multi-account)
-  - SRE: SLOs · SLIs · Error Budgets · DORA Metrics
-  - DevSecOps shift-left (SAST · SCA · OPA · Vault)
-  - FinOps · Cost Optimization · Chaos Engineering
+  - Kubernetes / EKS + GitOps (ArgoCD) — Blue/Green · Canary
+  - Infrastructure as Code (Terraform multi-account, OPA policy-as-code)
+  - SRE: SLOs · SLIs · Error Budgets · DORA Metrics · Chaos Engineering
+  - DevSecOps shift-left (SAST · SCA · Trivy · OPA · HashiCorp Vault)
+  - FinOps · Cost Optimization · Right-sizing · Savings Plans
 currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
+open_to: DFW (on-site/hybrid) · Remote (anywhere in US) · Relocation
 ```
 
 ---
 
-<!-- TECH STACK -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              ANIMATED CI/CD PIPELINE                     -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/saikommera/SaiKommera/main/assets/pipeline-animation.svg" width="100%" alt="Animated CI/CD pipeline — Code → Build → Scan → Stage → Prod"/>
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              ORBIT + RADAR SIDE BY SIDE                  -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/saikommera/SaiKommera/main/assets/tech-orbit.svg" width="380" alt="Rotating tech stack orbit animation"/>
+&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/saikommera/SaiKommera/main/assets/skill-radar.svg" width="380" alt="Animated skill proficiency radar chart"/>
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              ANIMATED TERMINAL                           -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/saikommera/SaiKommera/main/assets/terminal.svg" width="100%" alt="Animated terminal — kubectl, terraform, helm commands"/>
+
+</div>
+
+---
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              TECH STACK BADGES                           -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
 ## 🛠️ Tech Stack
 
-**Cloud & Infrastructure**
+**☁️ Cloud & Infrastructure**
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
@@ -71,7 +124,7 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 ![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![Pulumi](https://img.shields.io/badge/Pulumi-8A3391?style=flat-square&logo=pulumi&logoColor=white)
 
-**Containers & Orchestration**
+**📦 Containers & Orchestration**
 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
@@ -79,14 +132,14 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 ![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 ![Amazon EKS](https://img.shields.io/badge/EKS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 
-**CI/CD & GitOps**
+**🔄 CI/CD & GitOps**
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
 ![CircleCI](https://img.shields.io/badge/CircleCI-343434?style=flat-square&logo=circleci&logoColor=white)
 
-**Observability & AIOps**
+**📊 Observability & AIOps**
 
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
@@ -95,15 +148,15 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
 ![ELK](https://img.shields.io/badge/ELK_Stack-005571?style=flat-square&logo=elasticstack&logoColor=white)
 
-**DevSecOps & Security**
+**🔐 DevSecOps & Security**
 
-![HashiCorp Vault](https://img.shields.io/badge/Vault-000000?style=flat-square&logo=vault&logoColor=white)
+![Vault](https://img.shields.io/badge/Vault-000000?style=flat-square&logo=vault&logoColor=white)
 ![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white)
 ![OPA](https://img.shields.io/badge/OPA-7D3C98?style=flat-square&logo=openpolicyagent&logoColor=white)
 ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square)
 ![GuardDuty](https://img.shields.io/badge/GuardDuty-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 
-**Languages & Scripting**
+**💻 Languages**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
@@ -113,25 +166,10 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 
 ---
 
-<!-- SKILL PROFICIENCY -->
-## 📊 Skill Proficiency
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              FEATURED REPOS                              -->
+<!-- ═══════════════════════════════════════════════════════ -->
 
-| Skill | Proficiency | Level |
-|---|---|---|
-| **AWS** (EC2, EKS, IAM, VPC, RDS, Lambda) | `████████████████████` 95% | Expert |
-| **Terraform** (multi-account, modules, OPA) | `████████████████████` 92% | Expert |
-| **Kubernetes / EKS** (HPA, RBAC, GitOps) | `███████████████████░` 90% | Expert |
-| **CI/CD** (GitHub Actions, GitLab, Jenkins) | `███████████████████░` 90% | Expert |
-| **Docker / Helm / ArgoCD** | `██████████████████░░` 88% | Advanced |
-| **Prometheus / Grafana / OpenTelemetry** | `█████████████████░░░` 85% | Advanced |
-| **Python / Bash scripting** | `█████████████████░░░` 85% | Advanced |
-| **DevSecOps** (Vault, SAST, OPA) | `████████████████░░░░` 80% | Advanced |
-| **Datadog / Dynatrace / ELK** | `███████████████░░░░░` 78% | Advanced |
-| **Azure / GCP** | `████████████░░░░░░░░` 65% | Proficient |
-
----
-
-<!-- FEATURED REPOS -->
 ## 🏆 Featured Repositories
 
 <div align="center">
@@ -143,43 +181,16 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 [![architecture-diagrams](https://github-readme-stats.vercel.app/api/pin/?username=saikommera&repo=architecture-diagrams&theme=tokyonight&hide_border=true)](https://github.com/saikommera/architecture-diagrams)
 
 [![devsecops-pipeline](https://github-readme-stats.vercel.app/api/pin/?username=saikommera&repo=devsecops-pipeline&theme=tokyonight&hide_border=true)](https://github.com/saikommera/devsecops-pipeline)
-[![observability-stack](https://github-readme-stats.vercel.app/api/pin/?username=saikommera&repo=observability-stack&theme=tokyonight&hide_border=true)](https://github.com/saikommera/observability-stack)
+[![sre-devops-interview-prep](https://github-readme-stats.vercel.app/api/pin/?username=saikommera&repo=sre-devops-interview-prep&theme=tokyonight&hide_border=true)](https://github.com/saikommera/sre-devops-interview-prep)
 
 </div>
 
 ---
 
-<!-- SRE FOCUS -->
-## 🎯 SRE & Platform Engineering Focus
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              GITHUB STATS                                -->
+<!-- ═══════════════════════════════════════════════════════ -->
 
-<table>
-<tr>
-<td valign="top" width="50%">
-
-**Reliability Engineering**
-- 📐 SLOs · SLIs · Error Budgets
-- 📟 Incident Response · RCA · Post-Mortems
-- 📉 MTTR Reduction · DORA Metrics
-- 💥 Chaos Engineering · Capacity Planning
-- 🔄 Disaster Recovery · RTO/RPO Design
-
-</td>
-<td valign="top" width="50%">
-
-**Platform Engineering**
-- 🏗️ Internal Developer Platforms (IDPs)
-- 🛤️ Golden Paths · Self-Service Infra
-- 🚀 Zero-Drift IaC · Multi-Account AWS
-- 🔀 GitOps · Blue/Green · Canary
-- 💰 FinOps · Cost Optimization
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- GITHUB STATS -->
 ## 📈 GitHub Stats
 
 <div align="center">
@@ -195,33 +206,40 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=saikommera&theme=tokyonight&no-frame=true&row=1&column=6)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=saikommera&theme=tokyonight&no-frame=true&row=1&column=6&margin-w=8)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
 ---
 
-<!-- ACTIVITY GRAPH -->
-## 📅 Contribution Activity
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              CONTRIBUTION ACTIVITY                       -->
+<!-- ═══════════════════════════════════════════════════════ -->
 
-[![Sai Babji Kommera GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=saikommera&theme=tokyo-night&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=saikommera&theme=tokyo-night&hide_border=true&area=true&radius=8)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ---
 
-<!-- SNAKE ANIMATION -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              SNAKE ANIMATION                             -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/saikommera/saikommera/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/saikommera/saikommera/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/saikommera/saikommera/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/saikommera/SaiKommera/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/saikommera/SaiKommera/output/github-contribution-grid-snake.svg">
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/saikommera/SaiKommera/output/github-contribution-grid-snake.svg"/>
 </picture>
 
 </div>
 
 ---
 
-<!-- CERTIFICATIONS -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              CERTIFICATIONS                              -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
 ## 📜 Certifications
 
 | Status | Certification | Target |
@@ -232,7 +250,10 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 
 ---
 
-<!-- CONNECT -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<!--              CONNECT                                      -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
 ## 📫 Let's Connect
 
 <div align="center">
@@ -254,7 +275,5 @@ currently_targeting: Senior DevOps | SRE | Platform | Cloud Engineer roles
 ---
 
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=1F6FEB&height=80&section=footer" width="100%"/>
-
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=80&section=footer" width="100%"/>
 </div>
