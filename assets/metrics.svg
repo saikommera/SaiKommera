@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 160" width="800" height="160">
+
+  <rect width="800" height="160" fill="#0d1117" rx="12"/>
+
+  <!-- Card 1: Release Velocity -->
+  <rect x="10" y="10" width="185" height="140" fill="#161b22" stroke="#1f6feb" stroke-width="1" rx="10"/>
+  <text x="102" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">🚀 Release Velocity</text>
+  <text x="102" y="95" text-anchor="middle" font-family="monospace" font-size="42" font-weight="bold" fill="#58a6ff">
+    40
+    <animate attributeName="textLength" from="0" to="30" dur="2s" fill="freeze"/>
+  </text>
+  <text x="145" y="95" font-family="monospace" font-size="28" font-weight="bold" fill="#58a6ff">%</text>
+  <!-- Count-up animation for 40 -->
+  <text x="102" y="95" text-anchor="middle" font-family="monospace" font-size="42" font-weight="bold" fill="#0d1117">
+    40
+    <animate attributeName="fill" values="#0d1117;#0d1117;#0d1117;#0d1117;#58a6ff" dur="2s" fill="freeze"/>
+  </text>
+  <text x="102" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#388bfd">faster releases</text>
+  <text x="102" y="133" text-anchor="middle" font-family="monospace" font-size="9" fill="#484f58">IDP + CI/CD automation</text>
+
+  <!-- Animated bar under card 1 -->
+  <rect x="10" y="148" width="0" height="3" fill="#1f6feb" rx="2">
+    <animate attributeName="width" from="0" to="185" dur="2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+  </rect>
+
+  <!-- Card 2: Uptime -->
+  <rect x="205" y="10" width="185" height="140" fill="#161b22" stroke="#3fb950" stroke-width="1" rx="10"/>
+  <text x="297" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">📈 Service Uptime</text>
+  <text x="297" y="95" text-anchor="middle" font-family="monospace" font-size="42" font-weight="bold" fill="#56d364">+25%</text>
+  <text x="297" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#3fb950">uptime improvement</text>
+  <text x="297" y="133" text-anchor="middle" font-family="monospace" font-size="9" fill="#484f58">SLO/SLI + OpenTelemetry</text>
+  <rect x="205" y="148" width="0" height="3" fill="#3fb950" rx="2">
+    <animate attributeName="width" from="0" to="185" dur="2s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+  </rect>
+
+  <!-- Card 3: Cost Savings -->
+  <rect x="400" y="10" width="185" height="140" fill="#161b22" stroke="#d29922" stroke-width="1" rx="10"/>
+  <text x="492" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">💰 AWS Cost Savings</text>
+  <text x="492" y="95" text-anchor="middle" font-family="monospace" font-size="42" font-weight="bold" fill="#e3b341">22%</text>
+  <text x="492" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#d29922">cloud spend reduced</text>
+  <text x="492" y="133" text-anchor="middle" font-family="monospace" font-size="9" fill="#484f58">FinOps · Right-sizing</text>
+  <rect x="400" y="148" width="0" height="3" fill="#d29922" rx="2">
+    <animate attributeName="width" from="0" to="185" dur="2s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+  </rect>
+
+  <!-- Card 4: Security -->
+  <rect x="595" y="10" width="195" height="140" fill="#161b22" stroke="#a371f7" stroke-width="1" rx="10"/>
+  <text x="692" y="45" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">🔐 Security Posture</text>
+  <text x="692" y="88" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#bc8cff">ISO 27001</text>
+  <text x="692" y="108" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#bc8cff">SOC 2</text>
+  <text x="692" y="125" text-anchor="middle" font-family="monospace" font-size="10" fill="#a371f7">✓ Zero critical findings</text>
+  <text x="692" y="140" text-anchor="middle" font-family="monospace" font-size="9" fill="#484f58">DevSecOps shift-left</text>
+  <rect x="595" y="148" width="0" height="3" fill="#a371f7" rx="2">
+    <animate attributeName="width" from="0" to="195" dur="2s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+  </rect>
+</svg>
