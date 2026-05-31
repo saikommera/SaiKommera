@@ -1,0 +1,23 @@
+name: Weekly profile refresh
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update refresh timestamp
+        run: |
+          mkdir -p .github
+          echo "Last refreshed: $(date -u '+%Y-%m-%d %H:%M UTC')" > .github/last_refresh
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add .github/last_refresh
+          git diff --staged --quiet || (git commit -m "chore: weekly profile refresh [skip ci]" && git push)
