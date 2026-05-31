@@ -110,6 +110,20 @@ Senior **DevOps / Site Reliability Engineer** and **Platform Engineer** with **5
 
 ---
 
+
+---
+
+## 📈 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=saikommera&show_icons=true&theme=default&hide_border=true&count_private=true&include_all_commits=true" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=saikommera&layout=compact&theme=default&hide_border=true&langs_count=8" height="160"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=saikommera&theme=default&hide_border=true" height="160"/>
+</p>
+
 ## 📫 Let's Connect
 
 I'm actively targeting **Senior DevOps / SRE / Platform / Cloud Engineer** roles in the **Dallas-Fort Worth** area and **remote** across the US.
