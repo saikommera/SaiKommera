@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#0d1117" rx="12"/>
+
+  <!-- Radar grid circles -->
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#21262d" stroke-width="1"/>
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#21262d" stroke-width="1"/>
+  <circle cx="200" cy="200" r="90"  fill="none" stroke="#21262d" stroke-width="1"/>
+  <circle cx="200" cy="200" r="60"  fill="none" stroke="#21262d" stroke-width="1"/>
+  <circle cx="200" cy="200" r="30"  fill="none" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Radar spokes (6 axes: AWS, K8s, Terraform, CI/CD, DevSecOps, Observability) -->
+  <!-- 0deg=top, 60deg each -->
+  <!-- AWS: 270deg (top) -->
+  <line x1="200" y1="200" x2="200" y2="50"  stroke="#30363d" stroke-width="1"/>
+  <!-- K8s: 330deg -->
+  <line x1="200" y1="200" x2="330" y2="125" stroke="#30363d" stroke-width="1"/>
+  <!-- Terraform: 30deg -->
+  <line x1="200" y1="200" x2="330" y2="275" stroke="#30363d" stroke-width="1"/>
+  <!-- CI/CD: 90deg (bottom) -->
+  <line x1="200" y1="200" x2="200" y2="350" stroke="#30363d" stroke-width="1"/>
+  <!-- DevSecOps: 150deg -->
+  <line x1="200" y1="200" x2="70"  y2="275" stroke="#30363d" stroke-width="1"/>
+  <!-- Observability: 210deg -->
+  <line x1="200" y1="200" x2="70"  y2="125" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Labels -->
+  <text x="200" y="38"  text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#ff9900">AWS</text>
+  <text x="348" y="122" text-anchor="start"  font-family="monospace" font-size="11" font-weight="bold" fill="#326ce5">K8s</text>
+  <text x="340" y="284" text-anchor="start"  font-family="monospace" font-size="11" font-weight="bold" fill="#7b42bc">Terraform</text>
+  <text x="200" y="370" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#2088ff">CI/CD</text>
+  <text x="52"  y="284" text-anchor="end"    font-family="monospace" font-size="11" font-weight="bold" fill="#da3633">DevSecOps</text>
+  <text x="54"  y="122" text-anchor="end"    font-family="monospace" font-size="11" font-weight="bold" fill="#e6522c">Observability</text>
+
+  <!-- Skill polygon: AWS=95%, K8s=90%, Terraform=92%, CI/CD=90%, DevSecOps=80%, Observability=85% -->
+  <!-- Scale: 150px = 100% -->
+  <!-- AWS top: 200, 200-142=58 -->
+  <!-- K8s 330deg: 200+sin(330)*135=200+(-67.5)=267, 200-cos(330)*135=200-116.9=83 -->  
+  <!-- Actually computing: 
+    AWS (270°): x=200+150*cos(270°)=200+0=200, y=200+150*sin(270°)=200-150=50 → scale 95%: y=200-142=58
+    K8s (330°): cos330=0.866,sin330=-0.5 → x=200+135*0.866=317, y=200+135*(-0.5)=133
+    Terraform (30°): cos30=0.866,sin30=0.5 → x=200+138*0.866=320, y=200+138*0.5=269
+    CI/CD (90°): x=200, y=200+135=335
+    DevSecOps (150°): cos150=-0.866,sin150=0.5 → x=200+120*(-0.866)=96, y=200+120*0.5=260
+    Observability (210°): cos210=-0.866,sin210=-0.5 → x=200+128*(-0.866)=89, y=200+128*(-0.5)=136
+  -->
+
+  <!-- Animated filled radar polygon -->
+  <polygon points="200,50 317,133 320,269 200,335 96,260 89,136"
+    fill="#1f6feb" fill-opacity="0" stroke="#1f6feb" stroke-width="0">
+    <animate attributeName="fill-opacity" from="0" to="0.25" dur="2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+    <animate attributeName="stroke-width" from="0" to="2" dur="2s" fill="freeze"/>
+    <!-- Pulse effect after fill -->
+    <animate attributeName="fill-opacity" values="0.25;0.35;0.25" dur="3s" begin="2s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- Skill dots on vertices (appear after polygon) -->
+  <circle cx="200" cy="58"  r="0" fill="#ff9900"><animate attributeName="r" from="0" to="5" dur="0.3s" begin="2s" fill="freeze"/></circle>
+  <circle cx="317" cy="133" r="0" fill="#326ce5"><animate attributeName="r" from="0" to="5" dur="0.3s" begin="2.1s" fill="freeze"/></circle>
+  <circle cx="320" cy="269" r="0" fill="#7b42bc"><animate attributeName="r" from="0" to="5" dur="0.3s" begin="2.2s" fill="freeze"/></circle>
+  <circle cx="200" cy="335" r="0" fill="#2088ff"><animate attributeName="r" from="0" to="5" dur="0.3s" begin="2.3s" fill="freeze"/></circle>
+  <circle cx="96"  cy="260" r="0" fill="#da3633"><animate attributeName="r" from="0" to="5" dur="0.3s" begin="2.4s" fill="freeze"/></circle>
+  <circle cx="89"  cy="136" r="0" fill="#e6522c"><animate attributeName="r" from="0" to="5" dur="0.3s" begin="2.5s" fill="freeze"/></circle>
+
+  <!-- Percentage labels (appear last) -->
+  <text x="200" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#ff9900" opacity="0">95%<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.5s" fill="freeze"/></text>
+  <text x="326" y="130" font-family="monospace" font-size="9" fill="#326ce5" opacity="0">90%<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.6s" fill="freeze"/></text>
+  <text x="324" y="280" font-family="monospace" font-size="9" fill="#7b42bc" opacity="0">92%<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.7s" fill="freeze"/></text>
+  <text x="206" y="350" font-family="monospace" font-size="9" fill="#2088ff" opacity="0">90%<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.8s" fill="freeze"/></text>
+  <text x="60"  y="258" font-family="monospace" font-size="9" fill="#da3633" opacity="0">80%<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="2.9s" fill="freeze"/></text>
+  <text x="55"  y="134" font-family="monospace" font-size="9" fill="#e6522c" opacity="0">85%<animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="3.0s" fill="freeze"/></text>
+
+  <!-- Center dot -->
+  <circle cx="200" cy="200" r="4" fill="#58a6ff"/>
+
+  <!-- Title -->
+  <text x="200" y="393" text-anchor="middle" font-family="monospace" font-size="10" fill="#484f58">Skill Proficiency Radar · Senior DevOps / SRE Engineer</text>
+</svg>
