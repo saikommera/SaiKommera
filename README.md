@@ -121,5 +121,5 @@ I'm actively targeting **Senior DevOps / SRE / Platform / Cloud Engineer** roles
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=saibabjikommera&label=Profile%20Views&color=0e75b6&style=flat-square" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=saikommera&label=Profile%20Views&color=0e75b6&style=flat-square" alt="profile views" />
 </p>
