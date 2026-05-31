@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="pipe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1f6feb;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#3fb950;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="120" fill="url(#bg)" rx="12"/>
+
+  <!-- Stage boxes -->
+  <!-- Code -->
+  <rect x="20" y="35" width="90" height="50" fill="#161b22" stroke="#1f6feb" stroke-width="1.5" rx="8"/>
+  <text x="65" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#58a6ff">💻 Code</text>
+  <text x="65" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">git push</text>
+  <rect x="20" y="35" width="90" height="50" fill="#1f6feb" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="0s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Build -->
+  <rect x="160" y="35" width="90" height="50" fill="#161b22" stroke="#d29922" stroke-width="1.5" rx="8"/>
+  <text x="205" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#e3b341">🔨 Build</text>
+  <text x="205" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">docker build</text>
+  <rect x="160" y="35" width="90" height="50" fill="#d29922" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="0.6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Test / Scan -->
+  <rect x="300" y="35" width="100" height="50" fill="#161b22" stroke="#da3633" stroke-width="1.5" rx="8"/>
+  <text x="350" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#ff7b72">🔐 Scan</text>
+  <text x="350" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">trivy + OPA</text>
+  <rect x="300" y="35" width="100" height="50" fill="#da3633" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="1.2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Stage -->
+  <rect x="450" y="35" width="90" height="50" fill="#161b22" stroke="#a371f7" stroke-width="1.5" rx="8"/>
+  <text x="495" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#bc8cff">🚀 Stage</text>
+  <text x="495" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">helm upgrade</text>
+  <rect x="450" y="35" width="90" height="50" fill="#a371f7" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="1.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Prod -->
+  <rect x="590" y="35" width="90" height="50" fill="#161b22" stroke="#3fb950" stroke-width="1.5" rx="8"/>
+  <text x="635" y="56" text-anchor="middle" font-family="monospace" font-size="11" fill="#56d364">✅ Prod</text>
+  <text x="635" y="72" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">blue/green</text>
+  <rect x="590" y="35" width="90" height="50" fill="#3fb950" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.08;0" dur="3s" begin="2.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Connector lines -->
+  <line x1="110" y1="60" x2="158" y2="60" stroke="#30363d" stroke-width="2"/>
+  <line x1="250" y1="60" x2="298" y2="60" stroke="#30363d" stroke-width="2"/>
+  <line x1="400" y1="60" x2="448" y2="60" stroke="#30363d" stroke-width="2"/>
+  <line x1="540" y1="60" x2="588" y2="60" stroke="#30363d" stroke-width="2"/>
+
+  <!-- Animated dots on connectors -->
+  <!-- Dot 1: Code → Build -->
+  <circle r="5" fill="#1f6feb">
+    <animateMotion dur="3s" repeatCount="indefinite" begin="0s">
+      <mpath>
+        <animateTransform attributeName="transform" type="translate"
+          values="110,60; 158,60" dur="3s" repeatCount="indefinite" begin="0s"/>
+      </mpath>
+    </animateMotion>
+    <animate attributeName="cx" values="112;156;112" dur="3s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="cy" values="60;60;60" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+
+  <!-- Use animateMotion properly for dot flow -->
+  <circle r="5" fill="#1f6feb" cx="112" cy="60">
+    <animate attributeName="cx" values="112;156" dur="0.5s" begin="0s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="0s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#d29922" cx="252" cy="60">
+    <animate attributeName="cx" values="252;296" dur="0.5s" begin="0.6s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="0.6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#da3633" cx="402" cy="60">
+    <animate attributeName="cx" values="402;446" dur="0.5s" begin="1.2s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#a371f7" cx="542" cy="60">
+    <animate attributeName="cx" values="542;586" dur="0.5s" begin="1.8s" repeatCount="indefinite" calcMode="linear"/>
+    <animate attributeName="opacity" values="1;0" dur="0.5s" begin="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Title -->
+  <text x="400" y="18" text-anchor="middle" font-family="monospace" font-size="11" fill="#8b949e">── Zero-Drift CI/CD Pipeline · GitHub Actions → ArgoCD → Amazon EKS ──</text>
+  <text x="400" y="108" text-anchor="middle" font-family="monospace" font-size="10" fill="#484f58">Deployment Frequency: Daily  ·  Lead Time: &lt;30min  ·  MTTR: &lt;1hr  ·  Change Failure Rate: &lt;2%</text>
+</svg>
