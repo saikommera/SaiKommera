@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <rect width="800" height="200" fill="#0d1117" rx="12"/>
+  <text x="400" y="20" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#8b949e">🔐  DevSecOps Security Pipeline  ·  Shift-Left  ·  Zero Critical Findings</text>
+
+  <!-- Security stages as hexagons approximated as circles with labels -->
+  <!-- Stage 1: Pre-commit -->
+  <rect x="20" y="38" width="110" height="130" fill="#161b22" stroke="#da3633" stroke-width="1.5" rx="8"/>
+  <text x="75" y="65" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#ff7b72">Pre-Commit</text>
+  <text x="75" y="85"  text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Gitleaks</text>
+  <text x="75" y="100" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ TF fmt</text>
+  <text x="75" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Checkov</text>
+  <text x="75" y="130" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ ShellCheck</text>
+  <text x="75" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">0 secrets</text>
+  <!-- Blink on pass -->
+  <rect x="20" y="38" width="110" height="130" fill="#3fb950" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.06;0" dur="4s" begin="0s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Arrow -->
+  <polygon points="142,100 158,93 158,107" fill="#30363d"/>
+  <line x1="130" y1="100" x2="157" y2="100" stroke="#30363d" stroke-width="2"/>
+  <circle r="3" fill="#56d364" cx="130" cy="100">
+    <animate attributeName="cx" values="130;157" dur="0.8s" begin="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0" dur="0.8s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Stage 2: SAST/SCA -->
+  <rect x="160" y="38" width="110" height="130" fill="#161b22" stroke="#d29922" stroke-width="1.5" rx="8"/>
+  <text x="215" y="65" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#e3b341">SAST / SCA</text>
+  <text x="215" y="85"  text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ SonarQube</text>
+  <text x="215" y="100" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Semgrep</text>
+  <text x="215" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Snyk SCA</text>
+  <text x="215" y="130" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ OWASP</text>
+  <text x="215" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">0 critical CVEs</text>
+  <rect x="160" y="38" width="110" height="130" fill="#e3b341" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.06;0" dur="4s" begin="0.8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Arrow -->
+  <polygon points="282,100 298,93 298,107" fill="#30363d"/>
+  <line x1="270" y1="100" x2="297" y2="100" stroke="#30363d" stroke-width="2"/>
+  <circle r="3" fill="#56d364" cx="270" cy="100">
+    <animate attributeName="cx" values="270;297" dur="0.8s" begin="1.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0" dur="0.8s" begin="1.0s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Stage 3: Container -->
+  <rect x="300" y="38" width="110" height="130" fill="#161b22" stroke="#1f6feb" stroke-width="1.5" rx="8"/>
+  <text x="355" y="65" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#58a6ff">Container</text>
+  <text x="355" y="85"  text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Trivy</text>
+  <text x="355" y="100" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Syft SBOM</text>
+  <text x="355" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Cosign sign</text>
+  <text x="355" y="130" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Distroless</text>
+  <text x="355" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">0 HIGH/CRIT</text>
+  <rect x="300" y="38" width="110" height="130" fill="#1f6feb" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.06;0" dur="4s" begin="1.6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Arrow -->
+  <polygon points="422,100 438,93 438,107" fill="#30363d"/>
+  <line x1="410" y1="100" x2="437" y2="100" stroke="#30363d" stroke-width="2"/>
+  <circle r="3" fill="#56d364" cx="410" cy="100">
+    <animate attributeName="cx" values="410;437" dur="0.8s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0" dur="0.8s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Stage 4: Policy -->
+  <rect x="440" y="38" width="110" height="130" fill="#161b22" stroke="#a371f7" stroke-width="1.5" rx="8"/>
+  <text x="495" y="65" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#bc8cff">Policy Gate</text>
+  <text x="495" y="85"  text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ OPA/Rego</text>
+  <text x="495" y="100" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Tag policy</text>
+  <text x="495" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ K8s PSA</text>
+  <text x="495" y="130" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ RBAC audit</text>
+  <text x="495" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">100% compliant</text>
+  <rect x="440" y="38" width="110" height="130" fill="#a371f7" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.06;0" dur="4s" begin="2.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Arrow -->
+  <polygon points="562,100 578,93 578,107" fill="#30363d"/>
+  <line x1="550" y1="100" x2="577" y2="100" stroke="#30363d" stroke-width="2"/>
+  <circle r="3" fill="#56d364" cx="550" cy="100">
+    <animate attributeName="cx" values="550;577" dur="0.8s" begin="2.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0" dur="0.8s" begin="2.0s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Stage 5: Runtime -->
+  <rect x="580" y="38" width="110" height="130" fill="#161b22" stroke="#3fb950" stroke-width="2.5" rx="8"/>
+  <text x="635" y="65" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#56d364">Runtime</text>
+  <text x="635" y="85"  text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ GuardDuty</text>
+  <text x="635" y="100" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Sec Hub</text>
+  <text x="635" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ Vault</text>
+  <text x="635" y="130" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ CloudTrail</text>
+  <text x="635" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#3fb950">ISO27001 · SOC2</text>
+  <!-- Glow effect on final stage -->
+  <rect x="580" y="38" width="110" height="130" fill="none" stroke="#3fb950" stroke-width="2" rx="8">
+    <animate attributeName="stroke-width" values="2;6;2" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Final badge -->
+  <rect x="710" y="60" width="76" height="90" fill="#161b22" stroke="#56d364" stroke-width="2" rx="8"/>
+  <text x="748" y="96" text-anchor="middle" font-family="monospace" font-size="24">🛡</text>
+  <text x="748" y="115" text-anchor="middle" font-family="monospace" font-size="8" font-weight="bold" fill="#56d364">SECURED</text>
+  <text x="748" y="128" text-anchor="middle" font-family="monospace" font-size="7" fill="#56d364">Zero findings</text>
+  <rect x="710" y="60" width="76" height="90" fill="#3fb950" rx="8" opacity="0">
+    <animate attributeName="opacity" values="0;0.1;0" dur="2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
