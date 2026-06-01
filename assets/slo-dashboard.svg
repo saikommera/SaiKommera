@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="800" height="220">
+  <rect width="800" height="220" fill="#0d1117" rx="12"/>
+
+  <!-- Header bar -->
+  <rect width="800" height="32" fill="#161b22" rx="12"/>
+  <rect width="800" height="16" y="16" fill="#161b22"/>
+  <text x="16" y="21" font-family="monospace" font-size="11" font-weight="bold" fill="#58a6ff">📊  SLO Dashboard  ·  Production  ·  Last 30 days</text>
+  <circle cx="760" cy="16" r="5" fill="#3fb950"><animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
+  <text x="768" y="20" font-family="monospace" font-size="9" fill="#56d364">LIVE</text>
+
+  <!-- SLO Card 1: Payment API availability -->
+  <rect x="10" y="40" width="185" height="170" fill="#161b22" stroke="#3fb950" stroke-width="1" rx="8"/>
+  <text x="102" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Payment API</text>
+  <text x="102" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Availability</text>
+
+  <!-- Big percentage -->
+  <text x="102" y="105" text-anchor="middle" font-family="monospace" font-size="36" font-weight="bold" fill="#56d364">99.97%</text>
+  <text x="102" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#56d364">✓ SLO target: 99.9%</text>
+
+  <!-- Mini sparkline -->
+  <polyline points="18,170 36,165 54,168 72,162 90,166 108,160 126,163 144,158 162,161 180,155"
+    fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.7"/>
+  <polyline points="18,172 180,172" fill="none" stroke="#30363d" stroke-width="0.5"/>
+
+  <!-- Error budget ring -->
+  <circle cx="102" cy="155" r="18" fill="none" stroke="#21262d" stroke-width="4"/>
+  <circle cx="102" cy="155" r="18" fill="none" stroke="#3fb950" stroke-width="4"
+    stroke-dasharray="97 16" stroke-dashoffset="25" transform="rotate(-90 102 155)">
+    <animate attributeName="stroke-dasharray" values="0 113;97 16;97 16" dur="2s" fill="freeze"/>
+  </circle>
+  <text x="102" y="159" text-anchor="middle" font-family="monospace" font-size="8" fill="#56d364">87%</text>
+  <text x="102" y="190" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">budget left</text>
+  <text x="102" y="202" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">37.5 min remain</text>
+
+  <!-- SLO Card 2: User Service latency -->
+  <rect x="205" y="40" width="185" height="170" fill="#161b22" stroke="#d29922" stroke-width="1" rx="8"/>
+  <text x="297" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">User Service</text>
+  <text x="297" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">P99 Latency</text>
+  <text x="297" y="105" text-anchor="middle" font-family="monospace" font-size="36" font-weight="bold" fill="#e3b341">142ms</text>
+  <text x="297" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#e3b341">✓ SLO target: &lt;200ms</text>
+  <polyline points="213,175 231,168 249,172 267,160 285,155 303,162 321,158 339,152 357,165 375,148"
+    fill="none" stroke="#d29922" stroke-width="1.5" opacity="0.7"/>
+  <polyline points="213,177 375,177" fill="none" stroke="#30363d" stroke-width="0.5"/>
+  <circle cx="297" cy="155" r="18" fill="none" stroke="#21262d" stroke-width="4"/>
+  <circle cx="297" cy="155" r="18" fill="none" stroke="#d29922" stroke-width="4"
+    stroke-dasharray="71 42" stroke-dashoffset="25" transform="rotate(-90 297 155)">
+    <animate attributeName="stroke-dasharray" values="0 113;71 42;71 42" dur="2.2s" fill="freeze"/>
+  </circle>
+  <text x="297" y="159" text-anchor="middle" font-family="monospace" font-size="8" fill="#e3b341">63%</text>
+  <text x="297" y="190" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">budget left</text>
+  <text x="297" y="202" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">27.1 min remain</text>
+
+  <!-- SLO Card 3: Error rate -->
+  <rect x="400" y="40" width="185" height="170" fill="#161b22" stroke="#1f6feb" stroke-width="1" rx="8"/>
+  <text x="492" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Platform Error</text>
+  <text x="492" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">Rate</text>
+  <text x="492" y="105" text-anchor="middle" font-family="monospace" font-size="36" font-weight="bold" fill="#58a6ff">0.03%</text>
+  <text x="492" y="122" text-anchor="middle" font-family="monospace" font-size="9" fill="#58a6ff">✓ SLO target: &lt;0.1%</text>
+  <polyline points="408,175 426,173 444,176 462,170 480,172 498,168 516,174 534,166 552,170 570,164"
+    fill="none" stroke="#1f6feb" stroke-width="1.5" opacity="0.7"/>
+  <polyline points="408,177 570,177" fill="none" stroke="#30363d" stroke-width="0.5"/>
+  <circle cx="492" cy="155" r="18" fill="none" stroke="#21262d" stroke-width="4"/>
+  <circle cx="492" cy="155" r="18" fill="none" stroke="#1f6feb" stroke-width="4"
+    stroke-dasharray="104 9" stroke-dashoffset="25" transform="rotate(-90 492 155)">
+    <animate attributeName="stroke-dasharray" values="0 113;104 9;104 9" dur="2.4s" fill="freeze"/>
+  </circle>
+  <text x="492" y="159" text-anchor="middle" font-family="monospace" font-size="8" fill="#58a6ff">92%</text>
+  <text x="492" y="190" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">budget left</text>
+  <text x="492" y="202" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">39.5 min remain</text>
+
+  <!-- SLO Card 4: DORA -->
+  <rect x="595" y="40" width="195" height="170" fill="#161b22" stroke="#a371f7" stroke-width="1" rx="8"/>
+  <text x="692" y="58" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">DORA Metrics</text>
+  <text x="605" y="82" font-family="monospace" font-size="9" fill="#8b949e">Deploy Freq</text>
+  <text x="775" y="82" text-anchor="end" font-family="monospace" font-size="9" font-weight="bold" fill="#56d364">4.2/day ✓</text>
+  <text x="605" y="100" font-family="monospace" font-size="9" fill="#8b949e">Lead Time</text>
+  <text x="775" y="100" text-anchor="end" font-family="monospace" font-size="9" font-weight="bold" fill="#56d364">22 min ✓</text>
+  <text x="605" y="118" font-family="monospace" font-size="9" fill="#8b949e">MTTR</text>
+  <text x="775" y="118" text-anchor="end" font-family="monospace" font-size="9" font-weight="bold" fill="#56d364">47 min ✓</text>
+  <text x="605" y="136" font-family="monospace" font-size="9" fill="#8b949e">Change Fail</text>
+  <text x="775" y="136" text-anchor="end" font-family="monospace" font-size="9" font-weight="bold" fill="#56d364">1.8% ✓</text>
+
+  <rect x="605" y="148" width="180" height="2" fill="#30363d"/>
+  <text x="692" y="165" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#bc8cff">ELITE Performer</text>
+  <text x="692" y="180" text-anchor="middle" font-family="monospace" font-size="9" fill="#484f58">DORA State of DevOps 2024</text>
+  <text x="692" y="200" text-anchor="middle" font-family="monospace" font-size="20">🏆</text>
+</svg>
