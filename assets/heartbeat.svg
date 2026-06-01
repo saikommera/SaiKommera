@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" width="800" height="120">
+  <rect width="800" height="120" fill="#0d1117" rx="12"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="30"  x2="800" y2="30"  stroke="#161b22" stroke-width="1"/>
+  <line x1="0" y1="60"  x2="800" y2="60"  stroke="#161b22" stroke-width="1"/>
+  <line x1="0" y1="90"  x2="800" y2="90"  stroke="#161b22" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="120" stroke="#161b22" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="120" stroke="#161b22" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="120" stroke="#161b22" stroke-width="1"/>
+
+  <!-- Labels -->
+  <text x="8" y="12" font-family="monospace" font-size="9" fill="#484f58">99.97% SLO</text>
+  <text x="8" y="108" font-family="monospace" font-size="9" fill="#484f58">Uptime Monitor</text>
+  <text x="720" y="12" font-family="monospace" font-size="9" fill="#56d364">● LIVE</text>
+
+  <!-- Animated heartbeat path — draws across the screen -->
+  <!-- Flat line then spike then flat -->
+  <polyline
+    points="0,60 100,60 120,60 130,20 140,90 150,60 250,60 270,60 280,20 290,90 300,60 400,60 420,60 430,20 440,90 450,60 550,60 570,60 580,20 590,90 600,60 700,60 720,60 730,20 740,90 750,60 800,60"
+    fill="none" stroke="#56d364" stroke-width="2" opacity="0"
+    stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="opacity" from="0" to="1" dur="0.3s" fill="freeze"/>
+    <animate attributeName="stroke-dasharray" values="0,2000;2000,0" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+  </polyline>
+
+  <!-- Glow duplicate -->
+  <polyline
+    points="0,60 100,60 120,60 130,20 140,90 150,60 250,60 270,60 280,20 290,90 300,60 400,60 420,60 430,20 440,90 450,60 550,60 570,60 580,20 590,90 600,60 700,60 720,60 730,20 740,90 750,60 800,60"
+    fill="none" stroke="#56d364" stroke-width="4" opacity="0.15"
+    stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="stroke-dasharray" values="0,2000;2000,0" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.25 0.1 0.25 1"/>
+  </polyline>
+
+  <!-- Moving scan line -->
+  <line x1="0" y1="0" x2="0" y2="120" stroke="#1f6feb" stroke-width="1" opacity="0.4">
+    <animate attributeName="x1" values="0;800;0" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="0;800;0" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Status indicators -->
+  <circle cx="650" cy="25" r="4" fill="#56d364">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="660" y="29" font-family="monospace" font-size="9" fill="#56d364">All systems nominal</text>
+  <text x="650" y="45" font-family="monospace" font-size="9" fill="#8b949e">MTTR: 47min  ·  Incidents today: 0</text>
+</svg>
