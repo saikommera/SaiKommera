@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <rect width="800" height="200" fill="#0d1117" rx="12"/>
+
+  <!-- Title -->
+  <text x="400" y="22" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#8b949e">🏗  Terraform  ·  Multi-Account AWS Infrastructure  ·  Zero Drift</text>
+
+  <!-- Central Terraform box -->
+  <rect x="335" y="70" width="130" height="60" fill="#1a1229" stroke="#7b42bc" stroke-width="2" rx="8"/>
+  <text x="400" y="96" text-anchor="middle" font-family="monospace" font-size="12" font-weight="bold" fill="#a371f7">Terraform</text>
+  <text x="400" y="112" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e">Remote State · S3</text>
+  <!-- Pulse ring on Terraform box -->
+  <rect x="335" y="70" width="130" height="60" fill="none" stroke="#7b42bc" stroke-width="1" rx="8" opacity="0.5">
+    <animate attributeName="stroke-width" values="1;6;1" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- VPC Resource -->
+  <rect x="30" y="35" width="110" height="45" fill="#161b22" stroke="#1f6feb" stroke-width="1.5" rx="6"/>
+  <text x="85" y="54" text-anchor="middle" font-family="monospace" font-size="10" fill="#58a6ff">🌐 VPC</text>
+  <text x="85" y="68" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">10.0.0.0/16 · 3AZ</text>
+  <!-- Connector line VPC → Terraform -->
+  <line x1="140" y1="57" x2="333" y2="97" stroke="#1f6feb" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <!-- Animated dot VPC → TF -->
+  <circle r="4" fill="#1f6feb">
+    <animateMotion dur="2s" repeatCount="indefinite" begin="0s">
+      <mpath href="#path-vpc"/>
+    </animateMotion>
+  </circle>
+  <path id="path-vpc" d="M 140,57 L 333,97" fill="none"/>
+
+  <!-- EKS Resource -->
+  <rect x="30" y="115" width="110" height="45" fill="#161b22" stroke="#326ce5" stroke-width="1.5" rx="6"/>
+  <text x="85" y="134" text-anchor="middle" font-family="monospace" font-size="10" fill="#58a6ff">⎈ EKS</text>
+  <text x="85" y="148" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">1.29 · 3 node groups</text>
+  <line x1="140" y1="137" x2="333" y2="107" stroke="#326ce5" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <circle r="4" fill="#326ce5">
+    <animateMotion dur="2.3s" repeatCount="indefinite" begin="0.5s">
+      <mpath href="#path-eks"/>
+    </animateMotion>
+  </circle>
+  <path id="path-eks" d="M 140,137 L 333,107" fill="none"/>
+
+  <!-- RDS Resource -->
+  <rect x="165" y="155" width="110" height="38" fill="#161b22" stroke="#e3b341" stroke-width="1.5" rx="6"/>
+  <text x="220" y="170" text-anchor="middle" font-family="monospace" font-size="10" fill="#e3b341">🗄 RDS</text>
+  <text x="220" y="183" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">Multi-AZ · Encrypted</text>
+  <line x1="275" y1="170" x2="335" y2="120" stroke="#e3b341" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <circle r="4" fill="#e3b341">
+    <animateMotion dur="1.8s" repeatCount="indefinite" begin="0.3s">
+      <mpath href="#path-rds"/>
+    </animateMotion>
+  </circle>
+  <path id="path-rds" d="M 275,170 L 335,120" fill="none"/>
+
+  <!-- IAM Resource -->
+  <rect x="165" y="10" width="110" height="38" fill="#161b22" stroke="#da3633" stroke-width="1.5" rx="6"/>
+  <text x="220" y="25" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff7b72">🔐 IAM</text>
+  <text x="220" y="38" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">Least-privilege · IRSA</text>
+  <line x1="275" y1="28" x2="335" y2="78" stroke="#da3633" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <circle r="4" fill="#da3633">
+    <animateMotion dur="2.1s" repeatCount="indefinite" begin="0.7s">
+      <mpath href="#path-iam"/>
+    </animateMotion>
+  </circle>
+  <path id="path-iam" d="M 275,28 L 335,78" fill="none"/>
+
+  <!-- S3 Resource -->
+  <rect x="465" y="10" width="110" height="38" fill="#161b22" stroke="#ff9900" stroke-width="1.5" rx="6"/>
+  <text x="520" y="25" text-anchor="middle" font-family="monospace" font-size="10" fill="#ff9900">📦 S3</text>
+  <text x="520" y="38" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">Versioned · Encrypted</text>
+  <line x1="465" y1="28" x2="467" y2="78" stroke="#ff9900" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <circle r="4" fill="#ff9900">
+    <animateMotion dur="1.9s" repeatCount="indefinite" begin="0.2s">
+      <mpath href="#path-s3"/>
+    </animateMotion>
+  </circle>
+  <path id="path-s3" d="M 465,28 L 467,78" fill="none"/>
+
+  <!-- CloudWatch Resource -->
+  <rect x="465" y="155" width="130" height="38" fill="#161b22" stroke="#f46800" stroke-width="1.5" rx="6"/>
+  <text x="530" y="170" text-anchor="middle" font-family="monospace" font-size="10" fill="#f46800">📊 CloudWatch</text>
+  <text x="530" y="183" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">Alarms · Dashboards</text>
+  <line x1="530" y1="155" x2="467" y2="130" stroke="#f46800" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <circle r="4" fill="#f46800">
+    <animateMotion dur="2.4s" repeatCount="indefinite" begin="1.0s">
+      <mpath href="#path-cw"/>
+    </animateMotion>
+  </circle>
+  <path id="path-cw" d="M 530,155 L 467,130" fill="none"/>
+
+  <!-- GuardDuty -->
+  <rect x="645" y="70" width="130" height="38" fill="#161b22" stroke="#a371f7" stroke-width="1.5" rx="6"/>
+  <text x="710" y="85" text-anchor="middle" font-family="monospace" font-size="10" fill="#bc8cff">🛡 GuardDuty</text>
+  <text x="710" y="99" text-anchor="middle" font-family="monospace" font-size="8" fill="#484f58">Threat detection</text>
+  <line x1="645" y1="88" x2="467" y2="100" stroke="#a371f7" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <circle r="4" fill="#a371f7">
+    <animateMotion dur="2.6s" repeatCount="indefinite" begin="0.8s">
+      <mpath href="#path-gd"/>
+    </animateMotion>
+  </circle>
+  <path id="path-gd" d="M 645,88 L 467,100" fill="none"/>
+
+  <!-- Status bar -->
+  <rect x="0" y="188" width="800" height="12" fill="#161b22"/>
+  <text x="400" y="198" text-anchor="middle" font-family="monospace" font-size="8" fill="#56d364">✓ terraform plan: 0 to add, 0 to change, 0 to destroy  ·  No drift detected  ·  All resources compliant</text>
+</svg>
